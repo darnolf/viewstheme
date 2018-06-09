@@ -128,8 +128,8 @@
 
   <!-- Promoted Regions -->
 
-
-
+ <?php
+/*
   <div class="promogrid">
     <div class="col-a">Col Left</div>
     <?php print render($page['promoted-2']); ?>
@@ -154,10 +154,10 @@
       <div class="col-md-<?=$split ?>"><?php print render($page['promoted-2']); ?></div>
       <?php endif; ?>
     </div>
-  <?php endif; ?>
+  <?php endif;
+*/
 
-
-
+?>
 
   <div class="row">
 
@@ -168,7 +168,6 @@
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-    <h1>FRONT PAGE CONTENT SECTION</h1>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
