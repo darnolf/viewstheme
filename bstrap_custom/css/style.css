@@ -1,0 +1,54 @@
+/**
+ * Place your custom styles here.
+ */
+
+.view-id-test_view .row div {
+    /* height: 250px;
+    padding: 10px;
+    border: solid 1px #333;
+    border-radius: 10px;
+    margin: 5px; */
+}
+
+a {
+    transition: all .2s ease;
+}
+
+.promogrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "col-a" "col-b";
+}
+
+.promogrid>div {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.promogrid .col-a {
+    grid-area: 'col-a';
+    background: rgb(99, 47, 47);
+}
+
+.promogrid .col-b {
+    grid-area: 'col-b';
+    background: burlywood;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.promogrid .col-b .item a {
+    width: 100%;
+    heigth: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .promogrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "col-a col-b" "col-a col-b";
+    }
+}
